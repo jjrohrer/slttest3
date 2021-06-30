@@ -1,0 +1,3 @@
+[submodule "submodules/TallAndSassy"]
+	path = submodules/TallAndSassy
+	url = https://github.com/TallAndSassy/TallAndSassy

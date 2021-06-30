@@ -11,12 +11,20 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js([
+    'resources/js/app.js',
+    'submodules/TallAndSassy/Ui/resources/js/app.js', // <-- Import module js.  There is definetly a better way
+], 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
-    ]);
-
-if (mix.inProduction()) {
-    mix.version();
-}
+    ])
+    .postCss('submodules/TallAndSassy/PageGuide/page-guide/resources/public/css/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+    ])
+    .postCss('submodules/TallAndSassy/PageGuide/page-guide-admin/resources/public/css/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+    ]) // We can probably combine all module .css into one array, like in the mix.js above. But, there is also an probably and automated way, too.
+;

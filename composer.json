@@ -13,7 +13,10 @@
         "laravel/jetstream": "^2.3",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.5"
+        "livewire/livewire": "^2.5",
+        "blade-ui-kit/blade-heroicons": "^1.1",
+        "blade-ui-kit/blade-ui-kit": "^0.2.0",
+        "blade-ui-kit/blade-zondicons": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -21,7 +24,10 @@
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.3.3",
+        "prismjs/prism": "^1.23",
+        "wulfheart/pretty_routes": "^0.3.0",
+        "barryvdh/laravel-debugbar": "^3.5"
     },
     "autoload": {
         "psr-4": {
@@ -32,7 +38,11 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "TallAndSassy\\PageGuide\\": "submodules/TallAndSassy/PageGuide/page-guide/src",
+            "TallAndSassy\\PageGuideAdmin\\": "submodules/TallAndSassy/PageGuide/page-guide-admin/src",
+            "TallAndSassy\\Ui\\Glances\\": "submodules/TallAndSassy/Ui/Glances/src",
+            "TallAndSassy\\Strings\\": "submodules/TallAndSassy/Strings/src"
         }
     },
     "scripts": {
