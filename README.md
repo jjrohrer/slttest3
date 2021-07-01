@@ -39,11 +39,14 @@ On Forge:
         [ ] Create a database
         [ ] Create a new db user
     
-    On the Sites/NewSiteName tab:
+    On the Sites/NewSiteName/SSL tab:
         [ ] add SSL/Let's Encrypt
             [ ] Verify
 
-
+    On the Sites/NewSiteName/Apps tab:
+        [ ] App via git
+            [ ] If on BitBucket, just the path, no server. If on _GitHub_, then use the whole URL
+            [ ] UNCHECK IT! Do NOT specify 'Install w/ Composer'. We need to much with the install script (which we don't have access to yet)
 
 
 git clone --recurse-submodules https://github.com/jjrohrer/slttest3 slttest3c
